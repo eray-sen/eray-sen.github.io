@@ -1,21 +1,247 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eray Şen</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eray Şen | CCNA &amp; CCNA Automation</title>
+    <meta
+      name="description"
+      content="Eray Şen — Computer Science student and network enthusiast. Cisco CCNA and CCNA Automation certified."
+    />
+    <meta name="theme-color" content="#070b14" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eraysen.pl/" />
+    <meta property="og:title" content="Eray Şen | CCNA &amp; CCNA Automation" />
+    <meta
+      property="og:description"
+      content="Computer Science student and network enthusiast. Cisco CCNA and CCNA Automation certified."
+    />
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070b14'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='%2338e8c6' font-family='monospace' font-weight='700'%3EE%3C/text%3E%3C/svg%3E"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <main class="container">
-      <h1>Eray Şen</h1>
-      <p class="subtitle">Computer Science Student & Network Enthusiast</p>
+  <body id="top">
+    <canvas id="network" aria-hidden="true"></canvas>
+    <div class="vignette" aria-hidden="true"></div>
 
-      <div class="links">
-        <a href="https://github.com/eray-sen" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/eraysen3" target="_blank">LinkedIn</a>
-        <a href="mailto:kontakt@eraysen.pl">kontakt@eraysen.pl</a>
-      </div>
+    <header class="site-header">
+      <a class="brand" href="#top">eray<span>.sen</span></a>
+      <nav aria-label="Main">
+        <a href="#certifications">Certifications</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container">
+          <p class="eyebrow"><span class="prompt">$</span> whoami</p>
+          <h1>Eray <span class="grad">Şen</span></h1>
+          <p class="typed-line">
+            <span id="typed">Computer Science Student</span
+            ><span class="caret" aria-hidden="true"></span>
+          </p>
+          <p class="lead">
+            I build a solid understanding of how networks work, then automate
+            them. Cisco certified in both <strong>CCNA</strong> and
+            <strong>CCNA Automation</strong>.
+          </p>
+
+          <div class="cta">
+            <a class="btn primary" href="#certifications"
+              >View certifications</a
+            >
+            <a class="btn ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <a
+          class="scroll-hint"
+          href="#certifications"
+          aria-label="Scroll to certifications"
+          ><span></span
+        ></a>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section id="certifications" class="section">
+        <div class="container">
+          <p class="section-tag">// certifications</p>
+          <h2>
+            Foundation first, <span class="grad">automation</span> on top.
+          </h2>
+          <p class="section-sub">
+            Two Cisco certifications that cover how networks are built, and how
+            they are managed with code.
+          </p>
+
+          <div class="cards">
+            <article class="card reveal">
+              <div class="card-top">
+                <div class="icon">
+                  <svg
+                    viewBox="0 0 64 64"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <circle cx="32" cy="14" r="6" />
+                    <circle cx="12" cy="48" r="6" />
+                    <circle cx="52" cy="48" r="6" />
+                    <path d="M28 19 16 42M36 19l12 23M18 48h28" />
+                  </svg>
+                </div>
+                <span class="badge">Cisco · Associate</span>
+              </div>
+              <h3>CCNA</h3>
+              <p class="card-sub">Cisco Certified Network Associate</p>
+              <p>
+                Core networking knowledge: how traffic is switched and routed,
+                how IP services are delivered, and how networks are kept secure.
+              </p>
+              <ul class="chips">
+                <li>Network fundamentals</li>
+                <li>Network access</li>
+                <li>IP connectivity</li>
+                <li>IP services</li>
+                <li>Security fundamentals</li>
+                <li>Automation &amp; programmability</li>
+              </ul>
+
+              <a
+                class="verify"
+                href="https://www.credly.com/badges/8bb2ee79-cc07-495e-abe1-a09415129d3a/public_url"
+                target="_blank"
+                rel="noopener"
+                >Verify credential →</a
+              >
+            </article>
+
+            <article class="card reveal" style="--delay: 0.12s">
+              <div class="card-top">
+                <div class="icon alt">
+                  <svg
+                    viewBox="0 0 64 64"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M22 20 10 32l12 12M42 20l12 12-12 12M36 14 28 50"
+                    />
+                  </svg>
+                </div>
+                <span class="badge">Cisco · Associate</span>
+              </div>
+              <h3>CCNA Automation</h3>
+              <p class="card-sub">Network automation &amp; programmability</p>
+              <p>
+                Using code to design, deploy and manage infrastructure: APIs,
+                scripting and repeatable workflows instead of manual
+                configuration.
+              </p>
+              <ul class="chips">
+                <li>Python &amp; software design</li>
+                <li>REST APIs</li>
+                <li>Cisco platforms</li>
+                <li>Infrastructure automation</li>
+                <li>Deployment &amp; security</li>
+                <li>Network fundamentals</li>
+              </ul>
+              <a
+                class="verify"
+                href="https://www.credly.com/badges/ddde394d-48ca-473d-837e-9016e2189a1a/public_url"
+                target="_blank"
+                rel="noopener"
+                >Verify credential →</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container narrow">
+          <p class="section-tag">// about</p>
+          <h2>Curious about how data <span class="grad">moves</span>.</h2>
+          <div class="about-grid reveal">
+            <p>
+              I'm a Computer Science student with a strong interest in
+              networking: how packets find their way across the world, how
+              infrastructure is designed, and how automation makes it reliable
+              at scale.
+            </p>
+            <ul class="focus">
+              <li><span>01</span> Routing &amp; switching</li>
+              <li><span>02</span> Network security basics</li>
+              <li><span>03</span> Network automation &amp; APIs</li>
+              <li><span>04</span> Python &amp; Git workflows</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="container narrow center">
+          <p class="section-tag">// contact</p>
+          <h2>Let's <span class="grad">connect</span>.</h2>
+          <p class="section-sub">
+            Open to conversations about networking, automation and
+            opportunities.
+          </p>
+
+          <div class="links reveal">
+            <a class="link-card" href="mailto:mail@eraysen.pl">
+              <span class="label">Email</span>
+              <span class="value">mail@eraysen.pl</span>
+            </a>
+            <a
+              class="link-card"
+              href="https://linkedin.com/in/eraysen3"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="label">LinkedIn</span>
+              <span class="value">in/eraysen3</span>
+            </a>
+            <a
+              class="link-card"
+              href="https://github.com/eray-sen"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="label">GitHub</span>
+              <span class="value">eray-sen</span>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year">2026</span> Eray Şen</p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
